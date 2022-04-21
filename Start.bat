@@ -1,0 +1,2 @@
+py TrickScript.py
+pause
