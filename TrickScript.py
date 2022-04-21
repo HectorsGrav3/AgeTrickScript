@@ -1,4 +1,6 @@
-#Simple age trick script!!
+#Simple age trick script, whit discord webhook support!!
+
+from discord_webhook import DiscordWebhook
 
 me = "[Hector]#6969"
 print("Hello my friend I guess you gotta answear all the qestions truly!!")
@@ -8,3 +10,6 @@ age100 = int(input("Add to your birtday date the number 100 and write it down he
 age = year - (age100 - 100)
 print("Damn you are only:", age)
 print("MADE BY", me)
+
+webhook = DiscordWebhook(url='your webhook in here', content=age)
+response = webhook.execute()
